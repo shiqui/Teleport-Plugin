@@ -1,0 +1,37 @@
+name: sqtp
+version: ${project.version}
+main: me.shiqui.sqtp.Sqtp
+api-version: 1.16
+authors: [ shiqui ]
+description: shiqui's teleport plugin for minecraft 1.16
+commands:
+    tpt:
+      description: Send a request to teleport you to the target player, 60 seconds cooldown
+      usage: /<command> <target>
+      aliases: tpto
+    tph:
+      description: Send a request to teleport the target player to you, 60 seconds cooldown
+      usage: /<command> <target>
+      aliases: tphere
+    tpa:
+      description: Accept a teleport request
+      usage: /<command>
+      aliases: tpaccept
+    tpd:
+      description: Deny a teleport request
+      usage: /<command>
+      aliases: tpdeny
+    tpc:
+      description: Cancel any outgoing request
+      usage: /<command>
+      aliases: tpcancel
+    sethome:
+      description: Set home to the player's current location
+      usage: /<command>
+    home:
+      description: Teleport to home
+      usage: /<command>
+      aliases: recall
+    menu:
+      description: Open the Menu
+      usage: /<command>
